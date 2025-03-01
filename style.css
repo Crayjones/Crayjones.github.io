@@ -1,0 +1,160 @@
+:root {
+
+    color-scheme: light dark;
+
+    --light-background: #FFFFFF;
+    --light-primary: #222222;
+    --light-secondary: #455A64;
+    --light-links: #2F78C5;
+    
+    --dark-background: #222222;
+    --dark-gradient: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    --dark-secondary-background: #2a2d2e;
+    --dark-primary: #FFFFFF;
+    --dark-secondary: #e4e7e9;
+    --dark-links: #BB86FC;
+    --dark-links2: #398EEA;
+
+    --font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+
+    font-family: var(--font-family);
+}
+
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+.background {
+    z-index: -1;
+    position: fixed;
+    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: light-dark(var(--light-background), var(--dark-background));
+    border-bottom: 3px solid light-dark( var(--light-secondary), var(--dark-secondary-background));
+    padding: 0px 0px;
+    height: 7vh;
+}
+
+.name {
+    margin-left: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+    font-weight: 500;
+}
+
+.theme-toggle {
+    --size: 2rem;
+    
+    background: none;
+    border: none;
+    padding: 0;
+  
+    inline-size: var(--size);
+    block-size: var(--size);
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+main {
+    margin-top: 7vh;
+    height: 100vh;
+    background: transparent;
+}
+
+.profile {
+    padding: 20px;
+
+    display: grid;
+    place-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+    margin: 10px 0px;
+}
+
+.goal {
+    font-size: 1.5rem;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+    margin: 10px;
+}
+
+.skills {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.devicon {
+    font-size: 2rem;
+    gap: 20px;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+    background-color: light-dark(var(--light-background), var(--dark-background));
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box {
+    margin: 20px;
+    padding: 10px;
+    background-color: light-dark(var(--light-background), var(--dark-background));
+    width: fit-content;
+    border-radius: 10px;
+    max-width: 25%;
+}
+
+.box h2 {
+    font-size: 2rem;
+    margin: 0%;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+}
+
+.box div {
+    font-size: 2rem;
+    background-color: light-dark(var(--light-primary), var(--dark-secondary-background));
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box h3{
+    font-size: 1.75rem;
+    margin:0;
+    color: light-dark(var(--light-primary), var(--dark-primary));
+}
+
+.box p {
+    font-size: 1.5rem;
+    color: light-dark(var(--light-secondary), var(--dark-secondary));
+    margin: 0;
+}

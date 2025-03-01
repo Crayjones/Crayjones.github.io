@@ -3,24 +3,26 @@
     color-scheme: light dark;
 
     --light-background: #FFFFFF;
+    --light-secondary-background: #e3e3e3;
     --light-primary: #222222;
     --light-secondary: #455A64;
-    --light-links: #2F78C5;
     
     --dark-background: #222222;
-    --dark-gradient: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
     --dark-secondary-background: #2a2d2e;
     --dark-primary: #FFFFFF;
     --dark-secondary: #e4e7e9;
-    --dark-links: #BB86FC;
-    --dark-links2: #398EEA;
 
     --font-family: Tahoma, Verdana, sans-serif;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 * {
 
     font-family: var(--font-family);
+    color: var(--dark-primary)
 }
 
 body {
@@ -47,7 +49,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: light-dark(var(--light-background), var(--dark-background));
-    border-bottom: 3px solid light-dark( var(--light-secondary), var(--dark-secondary-background));
     padding: 0px 0px;
     height: 7vh;
 }
@@ -102,13 +103,11 @@ main {
 
 .profile h1 {
     font-size: 4rem;
-    color: light-dark(var(--light-primary), var(--dark-primary));
     margin: 10px 0px;
 }
 
 .goal {
     font-size: 1.5rem;
-    color: light-dark(var(--light-primary), var(--dark-primary));
     margin: 10px;
 }
 
@@ -116,7 +115,6 @@ main {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: light-dark(var(--light-primary), var(--dark-primary));
     margin: 20px;
 }
 
@@ -135,6 +133,9 @@ main {
     background-color: light-dark(var(--light-background), var(--dark-background));
     padding: 10px;
     border-radius: 10px;
+    i {
+        color: light-dark(var(--light-primary), var(--dark-primary));
+    }
 }
 
 .boxes {
@@ -160,7 +161,7 @@ main {
 
 .box div {
     font-size: 2rem;
-    background-color: light-dark(var(--light-primary), var(--dark-secondary-background));
+    background-color: light-dark(var(--light-secondary-background), var(--dark-secondary-background));
     margin: 10px 0px;
     border-radius: 10px;
     padding: 10px;

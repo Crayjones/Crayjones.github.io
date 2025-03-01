@@ -31,6 +31,8 @@ body {
 .background {
     z-index: -1;
     position: fixed;
+    top: 0;
+    left: 0;
     background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); 
     min-width: 100%;
     min-height: 100%;
@@ -82,7 +84,7 @@ nav a {
     block-size: var(--size);
     aspect-ratio: 1;
     border-radius: 50%;
-  }
+}
 
 main {
     margin-top: 10vh;
@@ -179,11 +181,12 @@ main {
 @media screen and (max-width: 768px) {
 
     .profile h1 {
-        font-size: 2.66rem;
+        font-size: 2.25rem;
     }
 
     .profile h2 {
-        font-size: 1.10rem;
+        margin-top: 0;
+        font-size: .9rem;
     }
     
 

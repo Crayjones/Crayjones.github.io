@@ -26,13 +26,13 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.26136996"
      inkscape:cx="441.90235"
-     inkscape:cy="793.89383"
+     inkscape:cy="791.98084"
      inkscape:window-width="1440"
-     inkscape:window-height="900"
+     inkscape:window-height="847"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <linearGradient
@@ -62,13 +62,10 @@
   </defs>
   <g
      id="layer1">
-    <rect
-       style="fill:url(#linearGradient3);fill-opacity:1;stroke-width:1"
-       id="rect2"
-       width="210"
-       height="210"
-       x="0"
-       y="0" />
+    <path
+       d="M 104.99979,0 A 105,105 0 0 0 0,104.99979 105,105 0 0 0 104.99979,210.0001 105,105 0 0 0 210.0001,104.99979 105,105 0 0 0 104.99979,0 Z"
+       style="fill:url(#linearGradient3)"
+       id="path11" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:180.021px;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke-width:1.02059"

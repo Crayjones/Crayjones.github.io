@@ -85,7 +85,7 @@ nav a {
   }
 
 main {
-    margin-top: 7vh;
+    margin-top: 10vh;
     height: 100vh;
     background: transparent;
 }
@@ -179,16 +179,16 @@ main {
 @media screen and (max-width: 768px) {
 
     .profile h1 {
-        font-size: 3rem;
+        font-size: 2.66rem;
     }
 
     .profile h2 {
-        font-size: 1.25rem;
+        font-size: 1.10rem;
     }
     
 
     header {
-        height: 7vh;
+        height: 10vh;
     }
 
     .skills-list {

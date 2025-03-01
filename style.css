@@ -158,3 +158,19 @@ h1 {
     color: light-dark(var(--light-secondary), var(--dark-secondary));
     margin: 0;
 }
+
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 10vh;
+    }
+    
+    .skills {
+        flex-direction: column;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+    
+}
